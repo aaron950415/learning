@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.extern {
+  width: 600px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.extern > div {
+  margin: 20px;
+  background-color: red;
+  width: 500px;
+  height: 400px;
+}
+
+.extern > div > div {
+  margin: 20px;
+  background-color: orange;
+  position: relative;
+  top: 20px;
+  left: 0px;
+  width: 460px;
+  height: 360px;
+}
+
+.extern > div > div > div {
+  margin: 20px;
+  background-color: yellow;
+  position: relative;
+  top: 20px;
+  left: 0px;
+  width: 420px;
+  height: 320px;
+}
+.extern > div > div > div > div {
+  margin: 20px;
+  background-color: green;
+  position: relative;
+  top: 20px;
+  left: 0px;
+  width: 380px;
+  height: 280px;
+}
+.extern > div > div > div > div > div {
+  margin: 20px;
+  background-color: cyan;
+  position: relative;
+  top: 20px;
+  left: 0px;
+  width: 340px;
+  height: 240px;
+}
+.extern > div > div > div > div > div > div {
+  margin: 20px;
+  background-color: blue;
+  position: relative;
+  top: 20px;
+  left: 0px;
+  width: 300px;
+  height: 200px;
+}
+.extern > div > div > div > div > div > div > div {
+  margin: 20px;
+  background-color: purple;
+  position: relative;
+  top: 20px;
+  left: 0px;
+  width: 260px;
+  height: 160px;
+}
+.extern > div > div > div > div > div > div > div > div {
+  margin: 20px;
+  background-color: white;
+  position: relative;
+  top: 20px;
+  left: 0px;
+  width: 220px;
+  height: 120px;
+}
+
+div {
+  border-radius: 50%;
+}
