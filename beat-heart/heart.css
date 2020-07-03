@@ -1,0 +1,35 @@
+.heart {
+  position: relative;
+   transform: rotate(45deg); 
+  top:250px;
+  left: 250px;
+  width: 100px;
+  height: 100px;
+
+}
+
+.mid {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}
+
+.top {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50px);
+    background-color: red;
+}
+.left {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50px);
+    background-color: red;
+}
+
