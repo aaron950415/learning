@@ -1,35 +1,41 @@
 .heart {
-  position: relative;
-   transform: rotate(45deg); 
-  top:250px;
-  left: 250px;
-  width: 100px;
-  height: 100px;
-
-}
-
-.mid {
-    width: 250px;
-    height: 250px;
-    background-color: red;
-}
-
-.top {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    position: absolute;
-    right: 50%;
-    transform: translateX(50px);
-    background-color: red;
-}
-.left {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50px);
-    background-color: red;
-}
-
+    position: relative;
+     transform: rotate(45deg) scale(0.5); 
+    top:250px;
+    left: 250px;
+    width: 100px;
+    height: 100px;
+    transition:all 1s;
+  
+  }
+  
+  .heart:hover {
+    transform: rotate(45deg) scale(1);
+  }
+  
+  .mid {
+      width: 250px;
+      height: 250px;
+      background-color: red;
+  }
+  
+  .top {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: absolute;
+      right: 50%;
+      transform: translateX(60px);
+      background-color: red;
+  }
+  .left {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 50%;
+      transform: translateY(60px);
+      background-color: red;
+  }
+  
+  
