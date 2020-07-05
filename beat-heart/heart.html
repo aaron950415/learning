@@ -2,14 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="heart.css">
+
     <title>Document</title>
+    <style>
+        #move {
+          width: 100px;
+          height: 100px;
+          border: 2px solid red;
+          transition: all 20s 2s;
+        }
+
+         .move {         transform: translateX(2000px);}
+        #move2 {
+          width: 100px;
+          height: 100px;
+          border: 2px solid red;
+          animation: move 50s forwards;
+        }
+      
+          @keyframes move{
+            100%{transform: translate(2000px);}
+        }
+      </style>
+    <script>
+        var timeMove = setTimeout(function(){
+            move.classList.add('move');
+        }, 1000);
+        (() => {
+            
+        }, interval);
+    </script>
 </head>
 <body>
-    <div class="heart">
-        <div class="top"></div>
-        <div class="left"></div>
-        <div class="mid"></div>
-    </div>
+    <div id="move"></div>
+
+
 </body>
 </html>

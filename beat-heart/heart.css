@@ -1,11 +1,11 @@
 .heart {
     position: relative;
-     transform: rotate(45deg) scale(0.5); 
+    transform: rotate(45deg) scale(0.5); 
     top:250px;
     left: 250px;
     width: 100px;
     height: 100px;
-    transition:all 1s;
+    transition:all 1s 2s;
   
   }
   
