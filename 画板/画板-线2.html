@@ -19,28 +19,37 @@
         ctx.fillStyle = "red";
         ctx.lineWidth = 20;
         ctx.lineCap = "round"
-        
+        function origin(a,b){
+            x0=a;
+            y0=b;
+        }
         function draw(x,y){
             ctx.beginPath();
             ctx.moveTo(x0, y0);
             ctx.lineTo(x, y);
             ctx.stroke();
         }
-
-        canvas.onmousedown=(e)=>{
-            x0=e.clientX;
-            y0=e.clientY;
-            canvas.onmousemove=(e)=>{
-                draw(e.clientX,e.clientY);
-                x0=e.clientX;
-                y0=e.clientY;
-               
+        if(!isTouchDevice){
+            canvas.onmousedown=(e)=>{
+                origin(e.clientX,e.clientY);
+                canvas.onmousemove=(e)=>{
+                    draw(e.clientX,e.clientY);
+                    origin(e.clientX,e.clientY);
+                
+                }
+            }
+            canvas.onmouseup=(e)=>{
+                canvas.onmousemove=null;
+            }
+        }else {
+            canvas.ontouchstart=(e)=>{
+                origin(e.touches[0].clientX,e.touches[0].clientY);
+            }
+            canvas.ontouchmove = (e) => {
+                draw(e.touches[0].clientX,e.touches[0].clientY);
+                origin(e.touches[0].clientX,e.touches[0].clientY);
             }
         }
-        canvas.onmouseup=(e)=>{
-            canvas.onmousemove=null;
-        }
-        
     </script>
 </body>
 </html>
