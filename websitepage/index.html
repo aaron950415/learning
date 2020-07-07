@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aaron store</title>
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./classmain.css">
+    <link rel="stylesheet" href="./classson1.css">
+    <link rel="stylesheet" href="./manage control page/font_1654622_zw5leh6po/iconfont.css" >
+    <link rel="icon" href="./source/book.png">
+    <style>
+    #banner{position: relative;}
+    #banner .banner-list{width: 100%; height: 600px; position: relative;}
+    #banner .banner-list li{width: 100%; height: 600px; background-size: cover;
+         position: absolute; left: 0; top: 0; opacity: 0; z-index: 1;}
+    #banner .banner-list li.active{opacity: 1; z-index: 10;}
+    #banner .banner-list a{display: block; width: 100%; height: 100%;}
+    #banner .banner-btn{ width: 100%;position: absolute; bottom: 19px;
+        z-index: 20;font-size: 0; text-align: center ;}
+    #banner .banner-btn li{display: inline-block; width: 12px;height: 12px;
+          border: 2px solid white;border-radius: 50%;box-sizing: border-box;
+        margin: 0 6px; cursor: pointer;}
+    #banner .banner-btn li.active{background-color: white;}
+
+    </style>
+    <script  type="text/javascript">
+        window.onload=function(){
+        
+          var a2=document.getElementsByClassName("x");
+        
+          var b2=document.getElementsByClassName("z");
+          for(var i=0;i<a2.length;i++){
+            active(a2[i],i);
+          }
+        }
+
+        active=function(ad,af){
+          ad.onmouseover=function(){
+            var a2=document.getElementsByClassName("x");
+            var b2=document.getElementsByClassName("z");
+         for(var k = 0; k <a2.length; k++)
+        {    a2[k].className="x";
+             b2[k].className="z";
+        } 
+          
+        ad.className="x active";
+        b2[af].className="z active";}
+          }
+        
+    </script>
+
+</head>
+<body>
+    
+    <div id="head" class="container">
+        <div class="head-logo l" >
+            <a   href="./index.html" >
+                <img class="l" src="./source/book.png" width="40px" height="40px" alt="Aaron's book store" title="Aaron's book store"><span class="l">Aaron's book store</span>
+            </a>
+           
+        </div>
+        <ul class="head-menu r" >
+            <li > 
+                <a href="./index.html">HOME</a>
+            </li>
+            <li>
+                <a href="./manage control page/list.html">BOOK LIST</a>
+            </li>
+            <li>
+                <a href="./manage control page/page.html">SEARCH</a>
+            </li>
+
+            <li>
+                <a href="./manage control page/person.html">DESIGNER</a>
+            </li>
+        </ul>
+    </div>
+    <div id="banner" class="container">
+        <ul class="banner-list">
+            <li class="z active" style="background-image: url('./source/sydneys-best-book-shops-19.jpg');">
+                <div class="main" style="display: block;"><div class="son1">The  Bookstore</div><div class="son2">Shop online or visit us in-store</div><a href="./manage control page/list.html"><div class="btn">Click Here</div></a></div>
+            </li>
+            
+           
+        
+
+            <li class="z" style="background-image: url(./source/HotBlack_Campus-Bookstore_005.jpg); ">
+                <div class="main" style="display: block;"><div class="son1">Book Search</div><div class="son2">searh book or find author</div><a href="./manage control page/page.html"><div class="btn">Click Here</div></a></div>
+            </li>
+            <li class="z" style="background-image: url('./source/1_YAaAjBYEDVI7ynN588t8fg.jpeg');">
+                <div class="main" style="display: block;"><div class="son1">The designer detail</div><div class="son2">work experience</div><a href="./manage control page/person.html"><div class="btn">Click Here</div></a></div>
+            </li>
+        </ul>
+        <ol class="banner-btn">
+            <li class="x active"></li>
+            <!-- <li class="x"></li> -->
+            <li class="x"></li>
+            <li class="x"></li>
+        </ol>
+    </div>
+    
+</body>
+</html>

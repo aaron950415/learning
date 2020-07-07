@@ -1,0 +1,79 @@
+{
+  "id": "1654622",
+  "name": "manage ",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4685703",
+      "name": "上传",
+      "font_class": "Group-",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "7217328",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "11683671",
+      "name": "上传",
+      "font_class": "ziyuan",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "724367",
+      "name": "通讯录",
+      "font_class": "addressbook2-copy",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "1047363",
+      "name": "company",
+      "font_class": "company",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "5044295",
+      "name": "齿轮",
+      "font_class": "chilun",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "400825",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e749",
+      "unicode_decimal": 59209
+    },
+    {
+      "icon_id": "9648350",
+      "name": "Log Out 1",
+      "font_class": "LogOut",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "11650845",
+      "name": "key",
+      "font_class": "key",
+      "unicode": "e7fb",
+      "unicode_decimal": 59387
+    },
+    {
+      "icon_id": "13075005",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    }
+  ]
+}

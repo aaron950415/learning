@@ -1,0 +1,34 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+img{display: block;}
+h1,h2,h3{font-size: 16px;font-weight: normal;}
+a{text-decoration: none; color: #333333;}
+html,body{font-family: Arial, Helvetica, sans-serif;height: 100%;overflow-y: hidden;}
+
+.l{float: left;}
+.r{float: right;}
+.clear::after{content: "";display: block;clear: both;}
+
+#header{height: 80px; background-color: #018ffb; border-top: 5px solid #333333;}
+#header .header_logo h1{margin: 19px 0 0 20px;}
+#header .header_logo h2{color: white;line-height: 25px;font-size: 24px;margin-top: 28px;}
+#header .header_nav{color: white; font-size: 14px;line-height: 14px;margin-top: 33px;}
+#header .header_nav li{float: left;margin-right: 25px;}
+#header .header_nav a{color: white;}
+#header .header_nav i{color: inherit;;margin-right: 8px;}
+#header .header_nav i.icon-user{font-size: 24px;position: relative; top: 4px;line-height: 8px;}
+#header .header_nav i.icon-key{font-size: 24px;position: relative; top: 4px;line-height: 8px;}
+#header .header_nav i.icon-home{font-size: 24px;position: relative; top: 4px;line-height: 8px;}
+#header .header_nav i.icon-LogOut{font-size: 24px;position: relative; top: 4px;line-height: 8px;}
+
+#menu {width: 200px;height: calc(100% - 85px); background-color: #424147;}
+#menu ul{color: #9a999e; text-align: center;}
+#menu li{height: 140px;border-bottom: 1px solid #3a339e;border-top: 1px solid #49484e;}
+#menu li a{color: inherit;display: block; padding-top: 35px; box-sizing: border-box;}
+#menu li i{font-size: 40px;}
+#menu li p{margin-top: 15px;}    
+#menu li.active{color: white;background-color: #4e4d53;}    
+
+#main{overflow: hidden; height: calc(100% - 85px - 50px);}
+#main .main_container{overflow: auto; height: 100%;} 
+#footer{border-top: 1px solid #dbe7ed;background-color: #f2f9fc;height: 49px; text-align: right;font-size: 12px;line-height: 49px;color: #888888;margin-right: 20px;}

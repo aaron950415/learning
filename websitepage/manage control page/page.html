@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="../manage control page/font_1654622_zw5leh6po/iconfont.css" >
+    <link rel="icon" href="../source/book.png">
+    <title>Search</title>
+    <style>
+        .area1 {background: black 100% 100%  url("../source/bcg2.jpg") ;height: 600px;box-shadow:0 0 30px 20px white ;}
+        .area2 {background: black 100% 100%  url("../source/bcg2.jpg") ;background-size: cover; height: 600px;box-shadow:0 0 30px 20px white inset ;}
+        .pp{position: relative;margin-top:25%}
+        .ppp{left:500px;top:5px}
+        .size{width: 80px;}
+    </style>
+        <script>
+            function search(){
+                var change=document.getElementById("shift");
+                change.className="ppp";
+                var book = getElementById("shift").value;
+                return book;
+            }
+        </script>
+        
+
+</head>
+<body>
+    <div id="head" class="container">
+        <div class="head-logo l" >
+            <a   href="../index.html" >
+                <img class="l" src="../source/book.png" width="40px" height="40px" alt="Aaron's book store" title="Aaron's book store"><span class="l">Aaron's book store</span>
+            </a>
+           
+        </div>
+        <ul class="head-menu r" >
+            <li > 
+                <a href="../index.html">HOME</a>
+            </li>
+            <li>
+                <a href="./list.html">BOOK LIST</a>
+            </li>
+            <li>
+                <a href="./page.html">SEARCH</a>
+            </li>
+
+            <li>
+                <a href="./person.html">DESIGNER</a>
+            </li>
+        </ul>
+    </div>
+  <main>
+        <div class="container">
+            <div class="area1">
+            <div class="area2"> 
+                <div >
+
+                <form action="page1.php" method="get">
+                  <span class="main">
+                  <input id="shift"  class="pp ppp" type="text" name="q" value="book search">
+                  </span>
+                  
+                  <input  type="submit" class="btn btn-primary size" onclick="search()"  value="Search"><span></span>
+                  <form action="page1.php" method="get">
+                  <input  type="submit" class="btn btn-primary size" name="p" onclick="search()"  value="All book"><span></span>
+
+                </form>
+                </form>
+                </div>
+                </div>
+    </div>
+    </div>
+                                
+  </main>
+</body>
+</html>
