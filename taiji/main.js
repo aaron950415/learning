@@ -223,6 +223,6 @@ style[0].innerHTML = string2;
       step();
       n++;
     }
-  }, 0);
+  }, 50);
 };
 step();
