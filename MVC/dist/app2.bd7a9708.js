@@ -118,6 +118,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"app2.js":[function(require,module,exports) {
+var origin = "\n            <div class=\"title\">\n                <div class=\"none\">1</div>\n                <div class=\"active\">2</div>\n            </div>\n            <p class=\"disappear\">content11</p>\n            <p class=\"\">content22</p>\n        ";
+var sty = localStorage.getItem("change") || JSON.stringify(origin);
+sty = JSON.parse(sty);
+document.querySelector('#app2').innerHTML = sty;
 var select = document.querySelector('.title');
 var content = document.querySelectorAll('p');
 
@@ -126,15 +130,17 @@ select.childNodes[3].onclick = function () {
   select.childNodes[3].className = 'active';
   content[1].className = 'disappear';
   content[2].className = '';
+  localStorage.setItem("change", JSON.stringify(document.querySelector('#app2').innerHTML));
 };
 
-console.log(select.childNodes[3]);
+console.log(document.querySelector('#app2').innerHTML);
 
 select.childNodes[1].onclick = function () {
   select.childNodes[3].className = 'none';
   select.childNodes[1].className = 'active';
   content[2].className = 'disappear';
   content[1].className = '';
+  localStorage.setItem("change", JSON.stringify(document.querySelector('#app2').innerHTML));
 };
 },{}],"C:/Users/aaron/AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -164,7 +170,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57636" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63663" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

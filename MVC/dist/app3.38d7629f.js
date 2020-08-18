@@ -118,11 +118,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"app3.js":[function(require,module,exports) {
-var squ = document.querySelector('#app3').childNodes[1];
-console.log(squ);
+console.log(document.querySelector('#app3').childNodes[1]);
+var init = "<div></div>";
+var pos = localStorage.getItem("change1") || JSON.stringify(init);
+document.querySelector('#app3').innerHTML = JSON.parse(pos);
 
-squ.onclick = function () {
-  squ.className !== 'active2' ? squ.className = 'active2' : squ.className = '';
+document.querySelector('#app3').firstChild.onclick = function () {
+  this.className !== 'active2' ? this.className = 'active2' : this.className = '';
+  localStorage.setItem("change1", JSON.stringify(document.querySelector('#app3').innerHTML));
 };
 },{}],"C:/Users/aaron/AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -152,7 +155,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57636" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63663" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
