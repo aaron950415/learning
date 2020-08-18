@@ -1,0 +1,20 @@
+
+@keyframes change{
+    0%{
+        background: red;
+    }
+    50%{
+        background: blue;
+    }
+
+}
+#app4>div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+#app4>div:hover{
+    animation: change 1s infinite alternate linear;
+
+/*# sourceMappingURL=/app4.6a60a776.css.map */

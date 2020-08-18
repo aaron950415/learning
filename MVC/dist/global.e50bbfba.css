@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar { width: 0 !important }
+.all{
+    display: flex;
+    flex-wrap: wrap;
+}
+.all>div{
+    border: 1px red solid;
+    width: 50vw;
+    height: 50vh;
+}
+
+/*# sourceMappingURL=/global.e50bbfba.css.map */

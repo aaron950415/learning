@@ -1,0 +1,12 @@
+#app3>div{
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    border: black 1px solid;
+    transition: transform 1s;
+}
+.active2{
+    transform: translateX(209px);
+}
+
+/*# sourceMappingURL=/app3.48a86793.css.map */

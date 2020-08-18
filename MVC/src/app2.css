@@ -1,0 +1,18 @@
+
+.title> div{
+    border: black 1px solid;
+    width: 25vw;
+}
+.active{
+    border-bottom:none;
+    display: block;
+    background-color: pink;
+}
+.disappear{
+    display: none;
+}
+.title{
+    display: block;
+    display: flex;
+    height:  6vh;
+}
